@@ -1,0 +1,117 @@
+/* ===== Estilos para Infobot (versión Tomás) ===== */
+
+/* Variables de colores */
+:root {
+  --fondo: #349c7d47;
+  --tarjeta: #ffffff;
+  --principal: #997641ce;
+  --secundario: #2f2b988b;
+  --texto: #2d2d2d;
+  --texto-suave: #5c5c5c;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+
+header {
+  background-color: var(--secundario);
+  padding: 25px 40px;
+  border-bottom: 8px solid var(--principal);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+
+main {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+main h2 {
+  font-size: 2.2rem;
+  color: var(--secundario);
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 3px dashed var(--principal);
+}
+
+
+main div {
+  background-color: var(--tarjeta);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 6px solid var(--principal);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+main img {
+  grid-row: 1 / 3; /* la imagen ocupa las dos filas */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 3px solid var(--secundario);
+}
+
+main h3 {
+  font-size: 1.6rem;
+  color: var(--principal);
+  margin-bottom: 8px;
+}
+
+main p {
+  color: var(--texto-suave);
+}
+
+main div:nth-of-type(even) {
+  grid-template-columns: 1fr 300px;
+  border-left: none;
+  border-right: 6px solid var(--secundario);
+}
+
+main div:nth-of-type(even) img {
+  grid-column: 2;
+  border-color: var(--principal);
+}
+
+main div:nth-of-type(even) h3 {
+  color: var(--secundario);
+}
+
+footer {
+  background-color: var(--secundario);
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+}
+
+  img {
+    grid-row: auto;
+    grid-column: auto;
+    margin-bottom: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
